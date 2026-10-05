@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for Post in object_list %}
+<div class="post_entry">
+<h2><a href="" class="yess"><P class="yoo">{{ Post.author }}</P></h2>
+<a href="{% url 'post-details' Post.pk %}">{{ Post.title }}</a>
+<p class="yess">{{ Post.body }}</p>
+<body class="yess">
+</body>
+</div>
+{% endfor %}
+{% endblock content %}

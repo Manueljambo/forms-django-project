@@ -1,0 +1,14 @@
+{% load static %}
+<html>
+    <head>
+        <title>django blog</title>
+        <link href= "{% static 'css/base.css' %}" rel="stylesheet" >
+    </head>
+    <h1 class="fuck"><a class="fuck" href="{% url 'home'%}">django blog</a></h1>
+    <a href="{% url 'post_new' %}">post</a>
+<hr>
+    <body>
+        {% block content %}
+        {% endblock content %}
+    </body>
+</html>
